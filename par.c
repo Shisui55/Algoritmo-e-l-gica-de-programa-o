@@ -9,9 +9,9 @@ int main()
     
     if(num%2==0)
     {
-        printf("O numero e par");
+        printf("O numero %d e par", num);
     }else{
-        printf("O numero e impar");
+        printf("O numero %d e impar", num);
     }
 
     return 0;
