@@ -7,6 +7,7 @@ int main()
     printf("Coloque um numero: ");
     scanf("%d",&num);
     
+    //condicional para verificar se o resto da divisão do número é 2
     if(num%2==0)
     {
         printf("O numero %d e par", num);
