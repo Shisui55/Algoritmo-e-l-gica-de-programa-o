@@ -4,9 +4,10 @@ int main()
 {
     //Faça um programa que leia a matricula, 2 notas e mostre a media e se foi aprovado
 
+    
     int matricula;
     float nota1,nota2, media;
-
+    inicio: 
     printf("Digite a sua matricula: ");
     scanf("%d",&matricula);
 
@@ -16,16 +17,20 @@ int main()
     printf("Digite a sua nota 2: ");
     scanf("%f",&nota2);
     
-    media = (nota1 + nota1)/2;
+    media = (nota2 + nota1)/2;
 
     if(media >= 6)
     {   
         printf("O aluno da matricula %d \nCom media de: %f \nfoi aprovado", matricula, media );
+
+    }else if(media >= 4 && media < 6){
+        printf("O aluno da matricula %d \nCom media de: %f \nfoi para o conselho", matricula, media );
+
     }else{
         printf("O aluno da matricula %d \nCom media de: %f \nfoi reprovado", matricula, media );
     }
     
-
+    goto inicio;
     
     return 0;
 }
