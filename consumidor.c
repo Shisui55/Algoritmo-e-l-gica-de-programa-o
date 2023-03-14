@@ -6,7 +6,7 @@ int main()
     
     int codigo;
     float consumo;
-    inicio:
+    
     printf("Digite o codigo: ");
     scanf("%d",&codigo);
 
@@ -30,6 +30,5 @@ int main()
         printf("O valor do consumo foi de: %0.2f\n", consumo );
     }
     
-    goto inicio;
     return 0;
 }
