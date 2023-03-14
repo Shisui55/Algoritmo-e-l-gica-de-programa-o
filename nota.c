@@ -7,7 +7,7 @@ int main()
     
     int matricula;
     float nota1,nota2, media;
-    inicio: 
+ 
     printf("Digite a sua matricula: ");
     scanf("%d",&matricula);
 
@@ -29,8 +29,6 @@ int main()
     }else{
         printf("O aluno da matricula %d \nCom media de: %f \nfoi reprovado", matricula, media );
     }
-    
-    goto inicio;
     
     return 0;
 }
