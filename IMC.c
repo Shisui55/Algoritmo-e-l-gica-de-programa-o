@@ -1,55 +1,41 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main()
 {
-    int a,b,c,d,e,men,mai;
-    printf("Digite: ");
-    scanf("%d%d%d%d%d",a,b,c,d,e);
+    int sexo;
+    float alt, peso;
     
-    
-    if(a > b && a > c && a > d && a > e)
-    {
-        mai = a;
-    }
-    if(b > a && b > c && b > d && b > e)
-    {
-        mai = b;
-    }
-    if(c> b && c> a && c> d && c> e)
-    {
-        mai = c;
-    }
-    if(d > a && d > c && d > b && d > e)
-    {
-        mai = d;
-    }
-    if(e > a && e > c && e > b && e > d)
-    {
-        mai = e;
-    }
-    
-    if(a < b && a < c && a < d && a < e)
-    {
-        men = a;
-    }
-    if(b < a && b < c && b < d && b < e)
-    {
-        men = b;
-    }
-    if(c< b && c< a && c< d && c< e)
-    {
-        men = c;
-    }
-    if(d < a && d < c && d < b && d < e)
-    {
-        men = d;
-    }
-    if(e < a && e < c && e < b && e < d)
-    {
-        men = e;
-    }
+    do{
+        printf("[1]masculino\n[2]feminino\nDigite o seu sexo: ");
+        scanf("%d",&sexo);
 
-    printf("o maior numero eh: %d\nE o menor eh: ",mai,men);
+        printf("Digite a sua altura: ");
+        scanf("%f",&alt);
+
+        if(alt <= 0)
+        {
+            printf("Digite uma altura válida:\n");
+        }
+
+        if(sexo < 1 || sexo > 2)
+        {
+            printf("Digite uma altura válida:\n");
+        
+        }else{
+            switch(sexo)
+            {
+                case 1:
+                    peso = (72.2 * alt) - 58; 
+                    printf("O peso ideal para essa altura eh: %0.2f",peso);
+                break;
+                
+                case 2: 
+                    peso = (62.1 * alt) - 58;
+                    printf("O peso ideal para essa altura eh: %0.2f",peso);
+                break;
+                
+            }
+        }
+    }while(sexo < 1 || sexo > 2 || alt <= 0);
 
     return 0;
 }
