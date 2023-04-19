@@ -2,54 +2,34 @@
 
 int main()
 {
-    int a,b,c,d,e,men,mai;
-    printf("Digite: ");
-    scanf("%d%d%d%d%d",a,b,c,d,e);
     
+    int M,m,array[5];
     
-    if(a > b && a > c && a > d && a > e)
+    for(int i = 0; i < 5; i++)
     {
-        mai = a;
-    }
-    if(b > a && b > c && b > d && b > e)
-    {
-        mai = b;
-    }
-    if(c> b && c> a && c> d && c> e)
-    {
-        mai = c;
-    }
-    if(d > a && d > c && d > b && d > e)
-    {
-        mai = d;
-    }
-    if(e > a && e > c && e > b && e > d)
-    {
-        mai = e;
-    }
-    
-    if(a < b && a < c && a < d && a < e)
-    {
-        men = a;
-    }
-    if(b < a && b < c && b < d && b < e)
-    {
-        men = b;
-    }
-    if(c< b && c< a && c< d && c< e)
-    {
-        men = c;
-    }
-    if(d < a && d < c && d < b && d < e)
-    {
-        men = d;
-    }
-    if(e < a && e < c && e < b && e < d)
-    {
-        men = e;
+        printf("Digite um numnero: ");
+        scanf("%d",&array[i]);
     }
 
-    printf("o maior numero eh: %d\nE o menor eh: ",mai,men);
+    M = array[0];
+    m = array[0];
 
-    return 0;
-}
+    for(int i = 0; i < 5; i++)
+    {
+       if(array[i] > M)
+            {
+                M = array[i];
+            }
+    }
+
+    for(int i = 0; i < 5; i++)
+    {
+       if(array[i] < m)
+            {
+                m = array[i];
+            }
+    }
+
+    printf("Maior eh: %d\n", M);
+    printf("Menor eh: %d", m);
+ }

@@ -3,8 +3,7 @@
 int main()
 {
     //Faça um programa que calcule o peso ideal de acordo com o sexo
-    float ideal;
-    float altura;
+    float ideal, altura;
     int sexo;
  
     printf("Digite a sexo [1: masculino| 2 : feminino]: ");
@@ -21,8 +20,6 @@ int main()
         ideal = (62.1*altura) - 44.7;
         printf("O peso ideal eh: %f\n\n",ideal);
     }
-    
-
     
     return 0;
 }

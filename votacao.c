@@ -2,8 +2,7 @@
 
 int main()
 {
-    //Faça um programa que calcule o peso ideal de acordo com o sexo
-
+    //Faça um programa que mostre se você pode ou não votar
     int idade;
  
     printf("Digite a sua idade: ");

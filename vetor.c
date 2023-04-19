@@ -40,12 +40,12 @@ int main()
     }
     printf("\n\nO menor numero e: %d\n",menor);
     
-    //laço para verificar qual a media dos números dados é menor
+    //laço para verificar qual a media dos números dados 
     for(int i=0; i < 5; i++)
     {
         media += num[i];
     }
-    printf("\n\nA media dos numeros e: %d\n\n\n",media/5);
+    printf("\n\nA media dos numeros eh: %d\n\n\n",media/5);
     
     return 0;
 }
