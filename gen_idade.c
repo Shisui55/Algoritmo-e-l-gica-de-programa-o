@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int q = 3,gen,quan_h;
+    int q = 3,gen,quan_h =0 ;
     float alt[12], media, maior = 0;
     
     for(int i = 0;i < q;i++)
