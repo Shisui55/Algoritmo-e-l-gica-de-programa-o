@@ -6,14 +6,14 @@ int main()
 {
     system("color 0a");
 
-    for(int k=0;k<24;k++)
+    for(int k=0;k<24;k++) // Loop para horas
     {
-        for(int j=0;j<60;j++)
+        for(int j=0;j<60;j++) // Loop para minutis
         {
-            for(int i=0;i<60;i++)
+            for(int i=0;i<60;i++)// Loop para os minutos
             {
-                // _sleep(1000);
-                system("cls");
+                _sleep(1000); // Delay para os segundos
+                system("cls"); // Limpa o console a cada segundo
                 if(j<10 && i<10)
                 {
                     printf("%d : 0%d : 0%d",k,j,i);
