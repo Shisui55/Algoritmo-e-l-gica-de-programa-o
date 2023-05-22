@@ -1,6 +1,6 @@
 #include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
+#include <stdio.h> // bilbioteca para o cls
+#include <time.h> // bilbioteca para o _sleep
 
 int main()
 {
