@@ -2,39 +2,62 @@
 
 int main()
 {
-    int q =3,aux,num[q],num2[q];
-    
-    // Loop para ler os numeros
-    for(int i=0; i<q ;i++)
-    {
-        scanf("%d",&num[i]);
-        num2[i] = num[i];
-    }
-    
-    // Loop para ordenar os numeros
-    for(int i=0; i < q;i++)
-    {
-        for(int j=0; j < q;j++)
-        {
-            if(num[i] < num[j])
-            {
-                aux = num[i];
-                num[i] = num[j];
-                num[j] = aux;
-            }
-        }
-    }
+    int mes;
 
-    // Loop para imprimir os numeros ordenados
-    for(int i=0; i<q ;i++)
-    {
-        printf("%d\n",num[i]);
-    }
-    printf("\n");
-    // Loop para mostrar os numeros na ordem em que foram lidos
-    for(int f = 0; f<q;f++)
-    {
-        printf("%d\n",num2[f]);
-    }
+    scanf("%d", &mes);
+
+   switch (mes)
+   {
+   case 1:
+    printf("January\n");
+    break;
+   
+   case 2:
+    printf("February\n");
+    break;
+   
+   case 3:
+    printf("March\n");
+    break;
+   
+   case 5:
+    printf("May\n");
+    break;
+   
+   case 4:
+    printf("April\n");
+    break;
+   
+   case 6:
+    printf("June\n");
+    break;
+   
+   case 7:
+    printf("July\n");
+    break;
+   
+   case 8:
+    printf("August\n");
+    break;
+   
+   case 9:
+    printf("September\n");
+    break;
+   
+   case 10:
+    printf("October\n");
+    break;
+   
+   case 11:
+    printf("November\n");
+    break;
+   
+   case 12:
+    printf("December\n");
+    break;
+   
+   default:
+    break;
+   }
     return 0;
 }
