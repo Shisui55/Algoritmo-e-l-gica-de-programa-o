@@ -1,17 +1,32 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-    int num[12],q = 20;
-    float media;
-    
-    for(int i = 0;i < q;i++)
+
+    int n;
+    scanf("%d", &n);
+
+    if (n >= 0 && n < 10)
     {
-        printf("Digite a sua idade: ");
-        scanf("%d", &num[i]);
-    
-        media += num[i];
-    
+        printf("1");
     }
-    printf("A media eh: %0.3f",media/q);
+    else
+    {
+        if (n >= 10 && n < 100)
+        {
+            printf("2");
+        }
+        else
+        {
+            if (n >= 100 && n < 1000)
+            {
+                printf("3");
+            }
+            else
+            {
+                printf("More than 3 digits");
+            }
+        }
+    }
+    return 0;
 }
